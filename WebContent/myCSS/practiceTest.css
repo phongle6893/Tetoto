@@ -1,0 +1,32 @@
+.containerBody{
+	width: auto;
+	height: 80vh;
+	
+}
+
+.marginLeft{
+	margin-left: 50px;
+	margin-top: 50px;
+	height: 150px;
+	font-size: 40px;
+}
+#multipleChoiceIF{
+	margin-top: 100px;
+	margin-left: 50px;
+	background: #B6D7A8;
+	width: 270px;
+	height: 450px;
+	
+}
+#pdfIF{
+	z-index: -1;
+	margin-top: 30px;
+	margin-left: 50px;
+	width: 90%;
+	height: 90vh;
+}
+.pagination {
+	margin-top: 30px;
+	margin-left: 35px;
+}
+
