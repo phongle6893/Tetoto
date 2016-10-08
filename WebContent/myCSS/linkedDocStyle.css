@@ -29,7 +29,7 @@
 		display: inline-block;
 		height: auto;
 		width: 100%;
-		background-color: #dff0d8
+		background-color: #d9edf7
 	}
 	.top-right{
 		height: 100%
@@ -77,16 +77,17 @@
 	margin-top: 1em;
 	margin-bottom: 1em
 }
+
 #fileupload{ position: absolute;
   top: 0;
   right: 0;
   margin: 0;
   opacity: 0;
   -ms-filter: 'alpha(opacity=0)';
-  font-size: 100% !important;
-
+  font-size: 200px !important;
   direction: ltr;
-  cursor: pointer;align-content: center; border: solid green;}
+  cursor: pointer;align-content: center;}
+
 
 /*.btn{
 	width: 100%;

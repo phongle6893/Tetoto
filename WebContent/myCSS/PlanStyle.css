@@ -1,0 +1,91 @@
+
+
+
+/*Navbar*/
+#head nav {padding-top: 10px;
+		padding-bottom: 10px;text-align: center;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.2)}
+#head ul{
+	padding-top: 20px
+
+}
+#callaction {
+
+	padding: 40px 0px;	
+}
+/*#btn-down{box-shadow: 0px 0px 0px rgba(0,0,0,0)}*/
+#search-input{width: 30em;margin-right:25em}
+#bell{margin-right: 10px}
+#WeTeTo-icon{height: 50px;width: 50px;}
+
+.border{border: solid green;}
+.border-red{border: solid red;}
+.h-right{margin-right:20px;padding-top: 10px}
+
+/*End header*/
+		
+.content{
+	display: inline-block;
+	height:auto;
+	width: 100%;
+
+}
+	.content-top{
+		display: inline-block;
+		height: 10em;
+		width: 100%;
+	}
+	.top-left{
+		height: 100%;
+	}
+
+	#avt-user{
+		height:100%;
+		padding-top: 1em;
+
+	}
+	
+	#info{
+		height: 100%
+	}
+
+	.content-bot{
+		display: inline-block;
+		height: auto;
+		width: 100%;
+		background-color: #faebcc
+	}
+	.top-right{
+		height: 100%
+	}
+	.information{
+		padding-top: 1em
+	}
+
+
+
+
+.border{
+	border: solid green;
+}
+.border-web{
+	border:solid #BDBDBD;
+}
+.border-blue{
+	border:solid blue;
+}
+
+.btn-group{
+	padding-top: 1%;
+}
+.padding5{padding: 5px 5px 5px 5px}
+.file-plan{
+	height: 8em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background: #ecf0f1;
+	border: #2c3e50 solid;
+	padding-top: 2em;
+
+}
+
