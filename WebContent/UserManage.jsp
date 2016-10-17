@@ -300,6 +300,48 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
+    <!-- Dialog Ban User -->
+      <div id="white-background">
+        </div>
+        <div id="dlgboxBan">
+            <!-- header dialog -->
+            <div id="dlg-header">Ban User</div>
+            <!-- body dialog -->
+            <div id="dlg-body">
+              <div class="input-group input-group-lg padding5">
+                <span class="input-group-addon" id="sizing-addon1">Duration of ban (day)</span>
+                <input type="number" min="0" class="form-control" placeholder="Duration" aria-describedby="sizing-addon1">
+              </div>
+              <div class="input-group input-group-lg padding5">
+                <span class="input-group-addon" id="sizing-addon1">Reason</span>
+                <input type="text" class="form-control" placeholder="reason" rows="3" aria-describedby="sizing-addon1">
+              </div>
+            </div>
+            <!-- footer dialog -->
+            <div id="dlg-footer">
+                <button class="btnDialog" onclick="dlgBanOK()">Ban this user</button>
+                <button class="btnDialog" onclick="dlgBanCancel()">Cancel</button>
+            </div>
+        </div>
+      <!-- End Dialog -->
+      <!-- Dialog Send message -->
+      <div id="white-background">
+        </div>
+        <div id="dlgboxMess">
+            <div id="dlg-header">Send a message</div>
+            <div id="dlg-body">
+              <div class="input-group input-group-lg padding5">
+                <span class="input-group-addon" id="sizing-addon1">Title</span>
+                <input type="text" class="form-control" aria-describedby="sizing-addon1">
+              </div>
+              <textarea class="span6 nput-group input-group-lg padding5" rows="5" placeholder="message" required style="margin: 0px; width: 100%;"></textarea>
+            </div>
+            <div id="dlg-footer">
+                <button class="btnDialog" onclick="dlgBanOK()">OK</button>
+                <button class="btnDialog" onclick="dlgBanCancel()">Cancel</button>
+            </div>
+        </div>
+      <!-- End Dialog -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -375,8 +417,49 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
-    
-
+    <!-- script for popup -->
+    <script>
+    function dlgBanCancel(){
+        dlgBanHide();
+        dlgMessHide()
+        document.getElementsByTagName("H1")[0].innerHTML = "You clicked Cancel.";
+    }
+    function dlgBanOK(){
+        dlgBanHide();
+        dlgMessHide()
+        document.getElementsByTagName("H1")[0].innerHTML = "You clicked OK.";
+    }
+    function dlgBanHide(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxBan");
+        whitebg.style.display = "none";
+        dlg.style.display = "none";
+    }
+    function showDialogBan(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxBan");
+        whitebg.style.display = "block";
+        dlg.style.display = "block";
+        var winWidth = window.innerWidth;
+        dlg.style.left = (winWidth/2) - 480/2 + "px";
+        dlg.style.top = "150px";
+    }
+    function dlgMessHide(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxMess");
+        whitebg.style.display = "none";
+        dlg.style.display = "none";
+    }
+    function showDialogMess(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxMess");
+        whitebg.style.display = "block";
+        dlg.style.display = "block";
+        var winWidth = window.innerWidth;
+        dlg.style.left = (winWidth/2) - 480/2 + "px";
+        dlg.style.top = "150px";
+    }
+  </script>
 </body>
 
 </html>

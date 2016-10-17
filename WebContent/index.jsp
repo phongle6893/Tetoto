@@ -161,9 +161,9 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12">
-                                <div class="service-item">
+                                <div class="service-item ">
                                 <!-- href="afterRegister.jsp#Vadidate" -->
-                                        <a href="afterRegister.jsp#Vadidate" target="_parent" id="registerBtn" class="btn btn-dark">Completed register</a>
+                                        <a href="afterRegister.jsp#Vadidate" target="_parent" id="registerBtn" class="btn btn-dark ">Completed register</a>
                                     
                                 </div>
                         </div>
@@ -375,7 +375,7 @@
                         var div = $("#password2").closest("div");
                         div.removeClass("has-error");
                         div.addClass("has-success has-feedback");
-                        $("#glypcn") .remove();                      
+                        $("#glypcn") .remove();                  
                         div.append('<span id="glypcn" class="glyphicon glyphicon-ok form-control-feedback"></span>');
                     }else{
                         var div = $("#password2").closest("div");

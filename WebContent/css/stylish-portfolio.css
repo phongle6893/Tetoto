@@ -302,3 +302,7 @@ footer {
   -webkit-box-shadow: inset 0 1px 1px #296, 0 0 8px #296;
           box-shadow: inset 0 1px 1px #296, 0 0 8px #296;
 }
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
