@@ -9,13 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ToTeTi</title>
+    <title>My Document</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/afterRegister.css" rel="stylesheet">
+    <link href="css/stylish-upload.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -36,82 +36,79 @@
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-arrow-left"></i></a>
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Menu</a>
+                <a href="#top" onclick=$("#menu-close").click();>TOTETI</a>
             </li>
             <li>
-                <a href="index.jsp" onclick=$("#menu-close").click();><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+                <a href="#top" onclick=$("#menu-close").click();>
+                <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp Home
+
+                </a>
             </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();><i class="fa fa-cloud" aria-hidden="true"></i>&nbsp;Services</a>
+
+
+            <li> 
+                <a href="#about" onclick=$("#menu-close").click();>
+                <i class="fa fa-bell fa-2x" aria-hidden="true"></i></i>&nbsp Notification
+                </a>
             </li>
+
+            <li> 
+                <a href="#about" onclick=$("#menu-close").click();>
+                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp Account Setting
+                </a>
+            </li>
+
+             <li>
+                <a href="#contact" onclick=$("#menu-close").click();>
+                  <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>&nbsp About
+                </a>
+            </li>  
+
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact</a>
+                <a href="#about" onclick=$("#menu-close").click();>
+                 <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>&nbsp Logout
+                 </a>
             </li>
         </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>ToTeTi</h1>
-            <h3>Toeic learning social network</h3>
-            
-            <br>
-            <a href="#register" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#login">Login</a>
-            
+    <!---avatar -->
+        <div class="col-lg-2"  >
+           <img src="img/avt.jpg" id="avatar" 
+             alt="mô tả avt" >
         </div>
+        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
+            <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
+        </div>
+        <br>
     </header>
 
-    
-
-    <div class="popup">
-        <div id="login" class="modal fade"  role="dialog">
-                  <div class="modal-dialog ">
-
-                    <!-- Modal content-->
-                    <div class="modal-content ">
-                      <div class="modal-header bg-primary">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Login</h4>
-                      </div>
-                      <div class="modal-body">
-                            <input type="text" class="form-control padding5" id="Username" placeholder="Enter Username">
-                            <input type="Password" class="form-control padding5" id="Password" placeholder="Enter Password">
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default bg-primary" data-dismiss="modal">Login</button>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-    </div>
-    <!-- Register -->
-    
-    <section id="Vadidate" class="Vadidate bg-primary2">
+    <!-- Services -->
+     <section id="register" class="register bg-primary2">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Completed register</h2>
+                    <h2>Upload Docunemt</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="service-item padding10">
+                        <form>
+                        <div class="col-md-12 col-sm-12 form-group">
+                            <div class="col-md-4 col-md-offset-4 col-sm-12">
+                                <div class="service-item">
                                     <span class="fa-stack fa-4x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-envelope-o fa-stack-1x text-light"></i>
+                                        <i class="fa fa-arrow-circle-up fa-stack-1x text-light"></i>
                                     </span>
-                                <h4>
-                                    <p><strong>Thank you for choosing.</strong></p>
-                                    <p><strong>Please check your e-mail to complete register.</strong></p>
-                                </h4>
-                                <p>
-                                    If you don't see our email,
-                                    <a class="text-green" href="" >please click here to try again <i class="fa fa-refresh" aria-hidden="true"></i></a>
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                                    <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                                </div>
                             </div>
+                        </div>
+                        </form>
+                        
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -122,67 +119,57 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="typeUpload" class="typeUpload bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>Select type</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-file-text-o fa-stack-1x text-green"></i>
-                                    </span>
-                                <h4>
-                                    <strong>Online test</strong>
-                                </h4>
-                                <p>Anytime, anywhere, any device.</p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
+                        <a href="uploadProactice.jsp#Upload">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-calendar fa-stack-1x text-green"></i>
+                                <i class="fa fa-circle fa-stack-2x text-light"></i>
+                                <i class="fa fa-list-alt fa-stack-1x text-green"></i>
                             </span>
                                 <h4>
-                                    <strong>Set your plan</strong>
+                                    <strong class="text-light">Practice Test</strong>
                                 </h4>
-                                <p>Learn your way, we'll help.</p>
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
+                        </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
+                        <a href="uploadReading.jsp#Upload">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-arrow-circle-up fa-stack-1x text-green"></i>
+                                <i class="fa fa-circle fa-stack-2x text-light"></i>
+                                <i class="fa fa-book fa-stack-1x text-green"></i>
                             </span>
                                 <h4>
-                                    <strong>Upload your document</strong>
+                                    <strong class="text-light">Reading Test</strong>
                                 </h4>
-                                <p>More proactive in your learning.</p>
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
+                        </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
+                        <a href="uploadListening.jsp#Upload">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-link fa-stack-1x text-green"></i>
+                                <i class="fa fa-circle fa-stack-2x text-light"></i>
+                                <i class="fa fa-headphones fa-stack-1x text-green"></i>
                             </span>
                                 <h4>
-                                    <strong>Share your document</strong>
+                                    <strong class="text-light">Listening Test</strong>
                                 </h4>
-                                <p>Connect everyone together.</p>
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
+                        </a>
                         </div>
+                        
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -196,11 +183,15 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Test TOEIC together</h1>
+            <h1>Study, learn more, learn forever</h1>
         </div>
     </aside>
 
+    <!-- Portfolio -->
     
+
+    
+
     <!-- Footer -->
     <footer class="bg-primary">
         <div class="container">
@@ -296,13 +287,16 @@
     // Disable Google Maps scrolling
     // See http://stackoverflow.com/a/25904582/1607849
     // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-   
+    
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
