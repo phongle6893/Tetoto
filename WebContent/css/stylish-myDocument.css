@@ -1,0 +1,502 @@
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background: url(../img/bg2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*Avatar*/
+#avatar{
+     border: 3px solid #296;
+    border-radius:50%;-moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    margin-top:20px;
+    margin-bottom: 20px ;
+
+}
+
+#userName{
+
+     font-family: Lato,sans-serif;
+     margin-left: 3px;
+    line-height: 1;
+    padding: 10px 25px;
+    font-size: 18px;
+    white-space: nowrap;
+    display: inline-block;
+}
+#userName:hover,
+#userName:focus,
+#userName:active{
+    color: #ecf0f1;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+    background-color: #296;
+}
+
+.service-item {
+    margin-bottom: 30px;
+
+}
+.search-item input{
+    width: 50%
+}
+#search-input{width: 35px;}
+
+
+
+.editor-document-item{
+
+    float: left;
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    color: #373737;
+    width: 140px;
+    height: 172px;
+    -webkit-box-shadow: 0 1px 4px rgba(1,1,1,.15);
+    box-shadow: 0 1px 4px rgba(1,1,1,.15);
+    margin: 0 0 60px 40px;
+    text-decoration: none;
+    padding: 12px 15px 0;
+    cursor: pointer;
+    margin-top:20px;
+
+}
+.editor-document-item:before {
+    cursor: default;
+    pointer-events: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    color: #b2b2b2;
+}
+.doc-content{
+    overflow: hidden;
+    height: 141px;
+    font-size: 11px;
+    line-height: 15px;
+
+}
+
+.add-document{
+        background: no-repeat 50% 23px;
+    background-image: url(https://du191j5nktvyb.cloudfront.net/static/9de4a5ba00/document_add.png);
+    text-align: center;
+    color: #373737;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 71px;
+  
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    opacity: .8;
+   
+    display: block;
+}
+
+.actions {
+    cursor: default;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    padding: 6px 14px;
+    height: 47px;
+    background: #fff;
+  
+}
+.upload{
+     overflow: hidden;
+    padding-left: 41px;
+    line-height: 34px;
+}
+.upload span{
+        cursor: pointer;
+         font-weight: 700;
+}
+#in{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+       opacity: 0;
+   
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.upload :before{
+    content:'';
+    display: block;
+    left: 7px;
+    top: 0;
+    position: absolute;
+    background: no-repeat center center;
+    display: inline-block;
+    width: 35px;
+    height: 100%;
+    cursor: pointer;
+    opacity: .8;
+
+    background-image: url(https://du191j5nktvyb.cloudfront.net/static/2e31104a0a/dialog_upload.png);
+}
+.doc-content .title {
+    line-height: 17px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.border{
+    border: solid red;
+}
+
+.delete-progress:after {
+    content:'';
+    display: block;
+    left: 7px;
+    top: 0;
+    position: absolute;
+    background: no-repeat center center;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: .8;
+    background-size: 16px 16px;
+    float:right;
+       background-image: url(https://d5j90a729cis5.cloudfront.net/static/c9a0c4dfd0/dialog_delete@2x.png);
+
+}
+
+
+.delete-progress span{
+     cursor: pointer;
+    font-weight: 700;
+}
+
+.errors-count {
+    display: inline-block;
+    position: relative;
+    color: #e2534f;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+/*SCORE*/
+@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
+@import url(http://fonts.googleapis.com/css?family=Boogaloo);
+
+.table-wrap {
+  max-width: 350px;
+  float: right;
+}
+
+
+.table {
+  border: 5px solid SlateGray;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+tr:nth-child(odd) { background: WhiteSmoke; }
+tr:nth-child(1) {  }
+tr:nth-child(2) {  }
+tr:nth-child(3) {  }
+
+thead {
+  tr{
+   background: SlateGray !important;
+   color: WhiteSmoke;
+  }
+}
+
+tfoot {
+  tr{
+   background: SlateGray  !important;
+   color: WhiteSmoke;
+  }
+}
+
+
+td, th {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  border: 0px !important;
+  vertical-align: middle !important ;
+}
+
+tfoot {
+td, th {
+  padding: 1em !important;
+}
+}
+
+
+th {
+  font-family: 'Black Ops One', cursive;
+}
+
+tr{
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  color: SlateGray;
+  
+  td:nth-child(1) { padding-left: 1.5em !important;  }
+  td:nth-child(2) { padding-left: 0em !important; }
+  td:nth-child(3) { text-align: right ; width: 60% ; padding-right: 1.5em !important; }
+  
+  th:nth-child(1) { padding-left: 1.5em !important; }
+  th:nth-child(2) { padding-left: 0em !important; }
+  th:nth-child(3) { text-align: right ; width: 20%;  padding-right: 1.5em !important;}
+}  
+
+.circle {
+  font-family: 'Black Ops One', cursive;
+  font-size: 1.5em;
+  width: 45px !important;
+  height: 45px !important;
+  background: DimGray ;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-radius:100%;
+}
+
+
+.first {
+  background: Coral;  
+}
+
+
+.second {
+  background: Goldenrod;  
+  
+}
+
+.third  {
+  background: Grey;  
+  
+}
+
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*Folder*/
+
+
+
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+
