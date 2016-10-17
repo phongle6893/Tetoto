@@ -86,7 +86,7 @@
                             <input type="Password" class="form-control padding5" id="Password" placeholder="Enter Password">
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-default bg-primary" data-dismiss="modal">Login</button>
+                        <a href="Profile.jsp"><button type="button" class="btn btn-default bg-primary" data-dismiss="">Login</button></a>
                       </div>
                     </div>
 
@@ -109,10 +109,14 @@
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-user fa-stack-1x text-light"></i>
                                     </span>
-                                    <input type="text" class="form-control padding5" id="Username" placeholder="Enter Username">
-                                    <input type="Password" class="form-control padding5" id="Password" placeholder="Enter Password">
-                                    <input type="Password" class="form-control padding5" id="Password" placeholder="Confirm Password">
-                                    <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                                    <form method="post" id="contactform" action="" role="form">
+                                        <input type="text" class="input-lg form-control padding5" name="username" id="username" placeholder="Enter username">
+                                        <input type="password" class="input-lg form-control has-error padding5" name="password1" id="password1" placeholder="New Password">
+                                    <div class="">
+                                        <input type="password" class="input-lg form-control padding5" name="password2" id="password2" placeholder="Repeat Password" >
+                                    </div>
+                                        <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +162,8 @@
                         </div>
                         <div class="col-md-12 col-sm-12">
                                 <div class="service-item">
-                                        <a href="afterRegister.jsp#Vadidate" target="_parent" class="btn btn-dark">Completed register</a>
+                                <!-- href="afterRegister.jsp#Vadidate" -->
+                                        <a href="afterRegister.jsp#Vadidate" target="_parent" id="registerBtn" class="btn btn-dark">Completed register</a>
                                     
                                 </div>
                         </div>
@@ -364,7 +369,33 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
+    <script>
+        function validatePass(){
+            if($("#password1").val() == $("#password2").val()){
+                        var div = $("#password2").closest("div");
+                        div.removeClass("has-error");
+                        div.addClass("has-success has-feedback");
+                        $("#glypcn") .remove();                      
+                        div.append('<span id="glypcn" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+                    }else{
+                        var div = $("#password2").closest("div");
+                        div.removeClass("has-success");
+                        div.addClass("has-error has-feedback");
+                        $("#glypcn") .remove();  
+                        div.append('<span id="glypcn" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>');
+                        return false;
+                    }
+        }
+        $(document).ready(
+            function(){
+                 $("input[type=password]").keyup(function(){
+                        validatePass();
+                });
+            }
+        );
 
+        
+    </script>
 </body>
 
 </html>

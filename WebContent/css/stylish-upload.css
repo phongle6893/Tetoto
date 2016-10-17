@@ -8,7 +8,26 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
 
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+
+}
+/*td{
+    border-left: 1px  solid #296;
+}*/
+tr:nth-child(even){background-color: #f0f0f0}
+th {
+    background-color: #296;
+    color: white;
+}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
