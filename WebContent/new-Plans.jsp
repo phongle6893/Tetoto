@@ -1,5 +1,4 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="en"   >
 
 <head>
@@ -12,7 +11,7 @@
 
     <title>New Plans</title>
 
-    <!-- Bootstrap Core CSS -x->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -76,7 +75,7 @@
                  <br> 
 
                  </a>
-                  <span id="userName">Hello,Khanh Do</span>
+                  <span id="userName">Hello,Đỗ Ngọc Khánh</span>
             </li>
            
         </ul>
@@ -119,9 +118,9 @@
                 <!-- /.col-lg-10 -->
             </div>
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary" ng-app=""  ng-init="title_plan='Plan'">
+    <section id="services" class="services bg-primary" ng-app=""  ng-init="title_plan='­­Plan'">
         <div class="text-center" style="">
-            <h1>��{{title_plan}}</h1>
+            <h1> {{title_plan}}</h1>
         </div>
         
 
@@ -191,7 +190,7 @@
                         </div>
                         <div class="row">
                              <div class="col-lg-2 col-lg-push-12">
-                             <h4><strong id="save-plan" >��Save</strong></h4>
+                             <h4><strong id="save-plan" style="position: absolute;" > Save</strong></h4>
                           </div>
                         </div>
 
