@@ -41,7 +41,7 @@
                 <a href="#top" onclick=$("#menu-close").click();>TOTETI</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>
+                <a href="admin.jsp" onclick=$("#menu-close").click();>
                 <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp Home
 
                 </a>
@@ -422,12 +422,12 @@
     function dlgBanCancel(){
         dlgBanHide();
         dlgMessHide()
-        document.getElementsByTagName("H1")[0].innerHTML = "You clicked Cancel.";
+        // document.getElementsByTagName("H1")[0].innerHTML = "You clicked Cancel.";
     }
     function dlgBanOK(){
         dlgBanHide();
         dlgMessHide()
-        document.getElementsByTagName("H1")[0].innerHTML = "You clicked OK.";
+        // document.getElementsByTagName("H1")[0].innerHTML = "You clicked OK.";
     }
     function dlgBanHide(){
         var whitebg = document.getElementById("white-background");
