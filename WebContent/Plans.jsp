@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html lang="en">
@@ -55,7 +54,7 @@
                 </a>
             </li>
             <li> 
-                <a href="#about" onclick=$("#menu-close").click();>
+                <a href="accountSetting.jsp" onclick=$("#menu-close").click();>
                   <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp Setting
                 </a>
             </li>
@@ -73,7 +72,7 @@
                  <br> 
 
                  </a>
-                  <span id="userName">Hello,Đỗ Ngọc Khánh</span>
+                  <span id="userName">Hello,Khanh Do</span>
             </li>
            
            

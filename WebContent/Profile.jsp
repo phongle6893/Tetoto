@@ -68,7 +68,7 @@
             </li>  
 
             <li>
-                <a href="index." onclick=$("#menu-close").click();>
+                <a href="index.jsp" onclick=$("#menu-close").click();>
                  <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>&nbsp Logout
                  <br> 
 

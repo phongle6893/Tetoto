@@ -47,7 +47,7 @@
                 </a>
             </li>
             <li>
-                <a href="#about" onclick=$( "#menu-close").click();>
+                <a href="accountSetting.jsp" onclick=$( "#menu-close").click();>
                     <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp Setting
                 </a>
             </li>
@@ -61,7 +61,7 @@
                     <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>&nbsp Logout
                     <br>
                 </a>
-                <span id="userName">Hello,Đỗ Ngọc Khánh</span>
+                <span id="userName">Hello,Khanh Do</span>
             </li>
         </ul>
     </nav>
@@ -105,7 +105,6 @@
                         </li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
                         <li>
                             <a href="#" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>

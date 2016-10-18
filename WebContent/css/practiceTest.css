@@ -25,12 +25,29 @@
 	height: 90vh;
 }
 .pagination {
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-left: 30px;
+
 }
 .center{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-left: 6px;
+}
+
+#userName{
+
+     font-family: 'Lato',sans-serif;
+     margin-left: 3px;
+    line-height: 1;
+    padding: 10px 25px;
+    font-size: 18px;
+    white-space: nowrap;
+    display: inline-block;
+}
+#userName:hover,
+#userName:focus,
+#userName:active{
+    color: #ecf0f1;
 }
