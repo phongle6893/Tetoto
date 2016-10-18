@@ -1,6 +1,4 @@
-
-<!DOCTYPE html >
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,12 +15,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-Profile.css" rel="stylesheet">
+    <link href="css/stylish-upload.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,23 +38,17 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="index.jsp" onclick=$("#menu-close").click();>TOTETI</a>
+                <a href="#top" onclick=$("#menu-close").click();>TOTETI</a>
             </li>
             <li>
-                <a href="Profile.jsp" onclick=$("#menu-close").click();>
+                <a href="#top" onclick=$("#menu-close").click();>
                 <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp Home
 
                 </a>
             </li>
-             <li> 
-                <a href="#about" onclick=$("#menu-close").click();>
-                <i class="fa fa-bell fa-2x" aria-hidden="true"></i></i>&nbsp Notification
-                </a>
-            </li>
-
             <li> 
-                <a href="accountSetting.jsp" onclick=$("#menu-close").click();>
-                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp  Setting
+                <a href="#about" onclick=$("#menu-close").click();>
+                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp Account Setting
                 </a>
             </li>
 
@@ -68,13 +59,12 @@
             </li>  
 
             <li>
-                <a href="index." onclick=$("#menu-close").click();>
+                <a href="#about" onclick=$("#menu-close").click();>
                  <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>&nbsp Logout
                  <br> 
 
                  </a>
-                  <span id="userName">Hello,Khanh Do</span>
-
+                  <span id="userName">Hello,Đỗ Ngọc Khánh</span>
             </li>
            
            
@@ -85,11 +75,11 @@
     <header id="top" class="header">
     <!---avatar -->
         <div class="col-lg-2"  ">
-           <img src="img/avt.jpg" id="avatar" 
+           <img src="img/admin.png" id="avatar" 
              alt="" >
         </div>
-        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
-            <h1 style="color: #ecf0f1">Welcome Khanh Do</h1>
+        <div class="text-vertical-center col-lg-6" style="margin-top:80px">
+            <h1 style="color: #ecf0f1">Welcome Administrator</h1>
         </div>
         <br>
     </header>
@@ -103,7 +93,20 @@
                     <h2>Our Services</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-user-secret fa-stack-1x text-primary" style="color: #296"></i>
+                            </span>
+                                <h4>
+                                    <strong>User Manage</strong>
+                                </h4>
+                                <p>Send messege to user <br> Ban user </p>
+                                <a href="MyDocument.jsp" class="btn btn-light">GO!</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -113,10 +116,10 @@
                                     <strong>My Document</strong>
                                 </h4>
                                 <p>Contain your file ,you can share it to every body and learn it every day.</p>
-                                <a href="MyDocument.jsp" class="btn btn-light">GO!</a>
+                                <a href="UserManage.jsp" class="btn btn-light">GO!</a>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -129,7 +132,7 @@
                                 <a href="linkDocument.jsp" class="btn btn-light">GO!</a>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -139,7 +142,7 @@
                                     <strong>Plans</strong>
                                 </h4>
                                 <p>Your plans, it is going to help you learn lesson very well.</p>
-                                <a href="Plans.jsp" class="btn btn-light">GO!</a>
+                                <a href="#" class="btn btn-light">GO!</a>
                             </div>
                         </div>
                        
@@ -149,8 +152,6 @@
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
-
-
         </div>
         <!-- /.container -->
     </section>
@@ -165,50 +166,34 @@
     <!-- Portfolio -->
     
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary" style="background-color: #296">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Map -->
-    
-
     <!-- Footer -->
-    <footer>
-        <div class="container" id="contact">
-            <div class="row">
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row" id="contact">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Toteti School</strong>
-                    </h4>
-                    <p>1, Vo Van Ngan street, Linh Chieu, Thu Duc district, Ho Chi Minh city.
-                        <br>Ho Chi Minh University Technology and Education, HCMUTE K14</p>
+                    <h3><strong>ToTeTi Company</strong>
+                    </h3>
+                    <p>1 Võ Văn Ngân
+                        <br>Thủ Đức, Hồ Chí Minh</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> 01642370739</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:dongockhanh3103@gmail.com">dongockhanh3103@gmail.com</a>
+                        <li><i class="fa fa-phone fa-fw"><a class="text-light" href="tel:01673638502"></i> 01673638502</a></li>
+                        <li><i class="fa fa-envelope-o fa-fw "></i> <a class="text-light" href="mailto:name@example.com">suport@toteti.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/dongockhanhIT.SPK"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="http://fb.com/phongle6893"><i class="fa fa-facebook fa-fw fa-3x text-light"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/LeHongPhong6893"><i class="fa fa-twitter fa-fw fa-3x text-light"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+                            <a href="http://hcmute.edu.vn"><i class="fa fa-dribbble fa-fw fa-3x text-light"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Start Bootstrap</p>
+                    <p class="text-muted text-light">Copyright &copy; Startbootstrap</p>
                 </div>
             </div>
         </div>
