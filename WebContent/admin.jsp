@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Profile Trial</title>
+    <title>Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -103,7 +103,7 @@
                                     <strong>User Manage</strong>
                                 </h4>
                                 <p>Send messege to user <br> Ban user </p>
-                                <a href="MyDocument.jsp" class="btn btn-light">GO!</a>
+                                <a href="UserManage.jsp" class="btn btn-light">GO!</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -116,7 +116,7 @@
                                     <strong>My Document</strong>
                                 </h4>
                                 <p>Contain your file ,you can share it to every body and learn it every day.</p>
-                                <a href="UserManage.jsp" class="btn btn-light">GO!</a>
+                                <a href="MyDocument.jsp" class="btn btn-light">GO!</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
