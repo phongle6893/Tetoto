@@ -150,7 +150,7 @@
                      
                  </div>
                  <div  style="display: inline-block;cursor: pointer;" >
-                    <a href="#" style="color: #296;text-decoration: none;"><h3 class="title-plan">Plan 1</h3></a> 
+                    <a href="new-Plans.jsp" style="color: #296;text-decoration: none;"><h3 class="title-plan">Plan 1</h3></a> 
 
                  </div>
 
@@ -171,7 +171,7 @@
                      
                  </div>
                  <div  style="display: inline-block;cursor: pointer;" >
-                      <a href="#" style="color: #296;text-decoration: none;"><h3 class="title-plan">Plan 2</h3></a> 
+                      <a href="new-Plans.jsp" style="color: #296;text-decoration: none;"><h3 class="title-plan">Plan 2</h3></a> 
                  </div>
 
                 <div style="display: inline-block;padding-left: 30em;">
@@ -190,7 +190,7 @@
                      
                  </div>
                  <div  style="display: inline-block;cursor: pointer;" >
-                      <a href="#" style="color: #296;text-decoration: none;"><h3 class="title-plan">Plan 3</h3></a> 
+                      <a href="new-Plans.jsp" style="color: #296;text-decoration: none;"><h3 class="title-plan">Plan 3</h3></a> 
 
                  </div>
 
