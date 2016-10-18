@@ -85,7 +85,7 @@
     <!---avatar -->
         <div class="col-lg-2"  >
            <img src="img/avt.jpg" id="avatar" 
-             alt="mô tả avt" >
+             alt="mÃ´ táº£ avt" >
         </div>
         <div class="text-vertical-center col-lg-5" style="margin-top:80px">
             <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
