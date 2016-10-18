@@ -41,8 +41,8 @@
                 <a href="#top" onclick=$("#menu-close").click();>TOTETI</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>
-                <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp Home
+                <a href="Profile.jsp" onclick=$("#menu-close").click();>
+                <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp; Home
 
                 </a>
             </li>
@@ -50,13 +50,13 @@
 
             <li> 
                 <a href="#about" onclick=$("#menu-close").click();>
-                <i class="fa fa-bell fa-2x" aria-hidden="true"></i></i>&nbsp Notification
+                <i class="fa fa-bell fa-2x" aria-hidden="true"></i></i>&nbsp; Notification
                 </a>
             </li>
 
             <li> 
                 <a href="#about" onclick=$("#menu-close").click();>
-                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp Account Setting
+                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp; Setting
                 </a>
             </li>
 
