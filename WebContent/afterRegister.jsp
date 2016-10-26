@@ -90,7 +90,7 @@
     </div>
     <!-- Register -->
     
-    <section id="Vadidate" class="Vadidate bg-primary2">
+    <section id="notification" class="Vadidate bg-primary2">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">

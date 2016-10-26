@@ -81,12 +81,12 @@
     <!-- Header -->
     <header id="top" class="header">
     <!---avatar -->
-        <div class="col-lg-2"  >
+        <div class="text-vertical-center col-lg-2 col-md-2 col-xs-12"  ">
            <img src="img/avt.jpg" id="avatar" 
-             alt="mô tả avt" >
+             alt="" >
         </div>
-        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
-            <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
+        <div class="text-vertical-center col-lg-6 col-md-6 col-xs-12 text-light" id="userName-header">
+            <h1>Welcome Khanh Do</h1>
         </div>
         <br>
     </header>
@@ -103,7 +103,7 @@
                                      <i class="fa fa-circle fa-stack-2x" style="color:#296"></i>
                                      <i class="fa fa-share-square fa-stack-1x text-primary" style="color:#ecf0f1"></i>
                                  </span >
-                               
+                                
                               
                             </div>
                         </div>
@@ -233,33 +233,33 @@
     
 
     <!-- Footer -->
-    <footer >
-        <div class="container" id="contact">
-            <div class="row">
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row" id="contact">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Toteti School</strong>
-                    </h4>
-                    <p>1, Vo Van Ngan street, Linh Chieu, Thu Duc district, Ho Chi Minh city.
-                        <br>Ho Chi Minh University Technology and Education, HCMUTE K14</p>
+                    <h3><strong>ToTeTi Company</strong>
+                    </h3>
+                    <p>1 Võ Văn Ngân
+                        <br>Thủ Đức, Hồ Chí Minh</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> 01642370739</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:dongockhanh3103@gmail.com">dongockhanh3103@gmail.com</a>
+                        <li><i class="fa fa-phone fa-fw"><a class="text-light" href="tel:01673638502"></i> 01673638502</a></li>
+                        <li><i class="fa fa-envelope-o fa-fw "></i> <a class="text-light" href="mailto:name@example.com">suport@toteti.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/dongockhanhIT.SPK"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="http://fb.com/phongle6893"><i class="fa fa-facebook fa-fw fa-3x text-light"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/LeHongPhong6893"><i class="fa fa-twitter fa-fw fa-3x text-light"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+                            <a href="http://hcmute.edu.vn"><i class="fa fa-dribbble fa-fw fa-3x text-light"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Start Bootstrap</p>
+                    <p class="text-muted text-light">Copyright &copy; Startbootstrap</p>
                 </div>
             </div>
         </div>

@@ -41,7 +41,7 @@
                 <a href="#top" onclick=$("#menu-close").click();>TOTETI</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>
+                <a href="Profile.jsp" onclick=$("#menu-close").click();>
                 <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp Home
 
                 </a>
@@ -77,12 +77,12 @@
     <!-- Header -->
     <header id="top" class="header">
     <!---avatar -->
-        <div class="col-lg-2"  >
+        <div class="text-vertical-center col-lg-2 col-md-2 col-xs-12"  ">
            <img src="img/avt.jpg" id="avatar" 
-             alt="mô tả avt" >
+             alt="" >
         </div>
-        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
-            <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
+        <div class="text-vertical-center col-lg-6 col-md-6 col-xs-12 text-light" id="userName-header">
+            <h1>Welcome Khanh Do</h1>
         </div>
         <br>
     </header>
@@ -124,8 +124,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Register</h2>
-                    <hr class="small">
+                    
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="col-md-4 col-md-offset-4 col-sm-12">
@@ -135,10 +134,10 @@
                                         <i class="fa fa-user fa-stack-1x text-green"></i>
                                     </span>
                                     <form method="post" id="contactform" action="" role="form">
-                                        <input type="passord" class="input-lg form-control padding5" name="username" id="username" placeholder="Old password">
-                                        <input type="password" class="input-lg form-control has-error padding5" name="password1" id="password1" placeholder="New Password">
-                                    <div class="">
-                                        <input type="password" class="input-lg form-control padding5" name="password2" id="password2" placeholder="Repeat Password" >
+                                        <div class="padding5"><input type="passord" class="input-lg form-control padding5" name="oldpass" id="oldpass" placeholder="Old password"></div>
+                                        <div class="padding5"><input type="password" class="input-lg form-control has-error padding5" name="password1" id="password1" placeholder="New Password"></div>
+                                    <div class="padding5">
+                                        <input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="Repeat Password" >
                                     </div>
                                         <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                                     </form>
@@ -151,7 +150,7 @@
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-envelope-o fa-stack-1x text-green"></i>
                                 </span>
-                                <input type="text" class="form-control padding5" id="mail" placeholder="Enter your mail">
+                                <div class="padding5"><input type="text" class="form-control padding5" id="mail" placeholder="Enter your mail"></div>
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
@@ -161,8 +160,8 @@
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-info fa-stack-1x text-green"></i>
                                 </span>
-                                <input type="text" class="form-control padding5" id="fname" placeholder="First name">
-                                <input type="text" class="form-control padding5" id="lname" placeholder="Last name">
+                                <div class="padding5"><input type="text" class="form-control padding5" id="fname" placeholder="First name"></div>
+                                <div class="padding5"><input type="text" class="form-control padding5" id="lname" placeholder="Last name"></div>
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
@@ -172,7 +171,7 @@
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-transgender-alt fa-stack-1x text-green"></i>
                                 </span>
-                                <div class="btn-group col-md-12 col-sm-12">
+                                <div class="btn-group col-md-12 col-sm-12 col-xs-12 padding5" id="btn-Gender">
                                   <button type="button" class="btn btn-default dropdown-toggle itemCenter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Gender <span class="caret"></span>
                                   </button>

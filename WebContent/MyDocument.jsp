@@ -86,12 +86,12 @@
     <!-- Header -->
     <header id="top" class="header">
     <!---avatar -->
-        <div class="col-lg-2"  >
+        <div class="text-vertical-center col-lg-2 col-md-2 col-xs-12"  ">
            <img src="img/avt.jpg" id="avatar" 
-             alt="mô tả avt" >
+             alt="" >
         </div>
-        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
-            <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
+        <div class="text-vertical-center col-lg-6 col-md-6 col-xs-12 text-light" id="userName-header">
+            <h1>Welcome Khanh Do</h1>
         </div>
         <br>
     </header>
@@ -169,12 +169,10 @@
                           <div class="actions errors ">
                             <div class="delete-progress">
                                 <span class="errors-count " data-tooltip="Alerts remaining"  >6%</span>
-                                <i class="fa fa-share-alt" style="display: inline-block;padding-left: 5px;color: #e74c3c"  aria-hidden="true"></i>
+                                <i class="fa fa-share-alt btn" onclick="showDialogMess()" style="display: inline-block;padding-left: 5px;color: #e74c3c"  aria-hidden="true"></i>
                             </div>
                          </div>
                     </div>
-
-
             <!-- Add Doc-item-->
                     <div class="editor-document-item col-lg-3">
                      <a href="PracticeTest.jsp" style="color: #2c3e50;text-decoration: none;">
@@ -249,39 +247,55 @@
     
 
     <!-- Footer -->
-    <footer >
-        <div class="container" id="contact">
-            <div class="row">
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row" id="contact">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Toteti School</strong>
-                    </h4>
-                    <p>1, Vo Van Ngan street, Linh Chieu, Thu Duc district, Ho Chi Minh city.
-                        <br>Ho Chi Minh University Technology and Education, HCMUTE K14</p>
+                    <h3><strong>ToTeTi Company</strong>
+                    </h3>
+                    <p>1 Võ Văn Ngân
+                        <br>Thủ Đức, Hồ Chí Minh</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> 01642370739</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:dongockhanh3103@gmail.com">dongockhanh3103@gmail.com</a>
+                        <li><i class="fa fa-phone fa-fw"><a class="text-light" href="tel:01673638502"></i> 01673638502</a></li>
+                        <li><i class="fa fa-envelope-o fa-fw "></i> <a class="text-light" href="mailto:name@example.com">suport@toteti.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/dongockhanhIT.SPK"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="http://fb.com/phongle6893"><i class="fa fa-facebook fa-fw fa-3x text-light"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/LeHongPhong6893"><i class="fa fa-twitter fa-fw fa-3x text-light"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+                            <a href="http://hcmute.edu.vn"><i class="fa fa-dribbble fa-fw fa-3x text-light"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Start Bootstrap</p>
+                    <p class="text-muted text-light">Copyright &copy; Startbootstrap</p>
                 </div>
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
+    <!-- Dialog Send message -->
+      <div id="white-background">
+        </div>
+        <div id="dlgboxMess">
+            <div id="dlg-header">Share Document</div>
+            <div id="dlg-body">
+              <div class="input-group input-group-lg padding5">
+                <span class="input-group-addon" id="sizing-addon1">Share to</span>
+                <input type="text" class="form-control" aria-describedby="sizing-addon1">
+              </div>
+            </div>
+            <div id="dlg-footer">
+                <button class="btnDialog" onclick="dlgBanOK()">OK</button>
+                <button class="btnDialog" onclick="dlgBanCancel()">Cancel</button>
+            </div>
+        </div>
+      <!-- End Dialog -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -356,7 +370,48 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
-
+    <script>
+    function dlgBanCancel(){
+        dlgBanHide();
+        dlgMessHide()
+        // document.getElementsByTagName("H1")[0].innerHTML = "You clicked Cancel.";
+    }
+    function dlgBanOK(){
+        dlgBanHide();
+        dlgMessHide()
+        // document.getElementsByTagName("H1")[0].innerHTML = "You clicked OK.";
+    }
+    function dlgBanHide(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxBan");
+        whitebg.style.display = "none";
+        dlg.style.display = "none";
+    }
+    function showDialogBan(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxBan");
+        whitebg.style.display = "block";
+        dlg.style.display = "block";
+        var winWidth = window.innerWidth;
+        dlg.style.left = (winWidth/2) - 480/2 + "px";
+        dlg.style.top = "150px";
+    }
+    function dlgMessHide(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxMess");
+        whitebg.style.display = "none";
+        dlg.style.display = "none";
+    }
+    function showDialogMess(){
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgboxMess");
+        whitebg.style.display = "block";
+        dlg.style.display = "block";
+        var winWidth = window.innerWidth;
+        dlg.style.left = (winWidth/2) - 480/2 + "px";
+        dlg.style.top = "150px";
+    }
+  </script>
 </body>
 
 </html>

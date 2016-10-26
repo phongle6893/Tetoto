@@ -38,25 +38,23 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>TOTETI</a>
+                <a href="index.jsp" onclick=$("#menu-close").click();>TOTETI</a>
             </li>
             <li>
                 <a href="Profile.jsp" onclick=$("#menu-close").click();>
-                <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp; Home
+                <i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp Home
 
                 </a>
             </li>
-
-
-            <li> 
+             <li> 
                 <a href="#about" onclick=$("#menu-close").click();>
-                <i class="fa fa-bell fa-2x" aria-hidden="true"></i></i>&nbsp; Notification
+                <i class="fa fa-bell fa-2x" aria-hidden="true"></i></i>&nbsp Notification
                 </a>
             </li>
 
             <li> 
-                <a href="#about" onclick=$("#menu-close").click();>
-                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp; Setting
+                <a href="accountSetting.jsp" onclick=$("#menu-close").click();>
+                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>&nbsp  Setting
                 </a>
             </li>
 
@@ -67,22 +65,28 @@
             </li>  
 
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>
+                <a href="index.jsp" onclick=$("#menu-close").click();>
                  <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>&nbsp Logout
+                 <br> 
+
                  </a>
+                  <span id="userName">Hello,Khanh Do</span>
+
             </li>
+           
+           
         </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
     <!---avatar -->
-        <div class="col-lg-2"  >
+        <div class="text-vertical-center col-lg-2 col-md-2 col-xs-12"  ">
            <img src="img/avt.jpg" id="avatar" 
-             alt="mô tả avt" >
+             alt="" >
         </div>
-        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
-            <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
+        <div class="text-vertical-center col-lg-6 col-md-6 col-xs-12 text-light" id="userName-header">
+            <h1>Welcome Khanh Do</h1>
         </div>
         <br>
     </header>
@@ -187,7 +191,13 @@
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
-                        
+                        <div class="col-md-12 col-sm-12">
+                                <div class="service-item ">
+                                <!-- href="afterRegister.jsp#Vadidate" -->
+                                        <a href="afterRegister.jsp#notification" target="_parent" id="registerBtn" class="btn btn-dark ">Submit file</a>
+                                    
+                                </div>
+                        </div>
                     </div>
                     <!-- /.row (nested) -->
                 </div>
