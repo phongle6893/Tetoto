@@ -82,12 +82,13 @@
     <!-- Header -->
     <header id="top" class="header">
     <!---avatar -->
-        <div class="col-lg-2"  >
+        <div class="col-lg-2 col-xs-12"  >
            <img src="img/avt.jpg" id="avatar" 
              alt="mÃ´ táº£ avt" >
         </div>
-        <div class="text-vertical-center col-lg-5" style="margin-top:80px">
-            <h1 style="color:#ecf0f1 ">Welcome Khanh Do</h1>
+        <div class="text-vertical-center col-lg-5 " id="hello-user" style="margin-top:80px">
+          <!--   < style=" ">Welcome Khanh Do</h1> -->
+          <p>Welcome Khanh Do</p>
         </div>
         <br>
     </header>
@@ -98,7 +99,7 @@
                     <h2 style="color: #296">Plans</h2>
                     <hr class="small">
                     <div class="row " >
-                        <div class="col-md-4 col-sm-6 col-md-offset-4">
+                        <div class="col-md-4 col-sm-6 col-md-offset-4 ">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                      <i class="fa fa-circle fa-stack-2x" style="color:#296"></i>
