@@ -259,9 +259,7 @@ hr.small {
 
 /* Footer */
 
-footer {
-    padding: 20px 0;
-}
+
 
 #to-top {
   display: none;
@@ -269,21 +267,24 @@ footer {
   bottom: 5px;
   right: 5px;
 }
-    h1{
-        font-size: 5vw;
-        -webkit-text-stroke-width: .5px;
-        -webkit-text-stroke-color: #296;
-       }
-       #userName-header{
-        padding-top: 3vh;
-       }
-       .padding5{
-        padding: 5px 5px 5px 5px;
-       }
-       .text-light{
-            color: white;
-        }
-        .bg-primary {
+footer {
+    padding: 20px 0;
+}
+h1{
+    font-size: 5vw;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #296;
+}
+#userName-header{
+     padding-top: 3vh;
+ }
+.padding5{
+    padding: 5px 5px 5px 5px;
+}
+.text-light{
+    color: white;
+}
+.bg-primary {
     color: white;
     background-color: #296;
 }
