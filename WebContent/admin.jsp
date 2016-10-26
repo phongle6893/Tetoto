@@ -59,7 +59,7 @@
             </li>  
 
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>
+                <a href="index.jsp" onclick=$("#menu-close").click();>
                  <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>&nbsp Logout
                  <br> 
 
@@ -74,12 +74,12 @@
     <!-- Header -->
     <header id="top" class="header">
     <!---avatar -->
-        <div class="col-lg-2"  ">
+        <div class="text-vertical-center col-lg-2 col-md-2 col-xs-12"  ">
            <img src="img/admin.png" id="avatar" 
              alt="" >
         </div>
-        <div class="text-vertical-center col-lg-6" style="margin-top:80px">
-            <h1 style="color: #ecf0f1">Welcome Administrator</h1>
+        <div class="text-vertical-center col-lg-6 col-md-6 col-xs-12 text-light" id="userName-header">
+            <h1>Welcome Administrator</h1>
         </div>
         <br>
     </header>
