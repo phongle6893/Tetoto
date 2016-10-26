@@ -147,7 +147,7 @@
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-transgender-alt fa-stack-1x text-light"></i>
                                 </span>
-                                <div class="btn-group col-md-12 col-sm-12">
+                                <div class=" btn-group col-md-12 col-sm-12 col-xs-12 padding5" id="btn-Gender">
                                   <button type="button" class="btn btn-default dropdown-toggle itemCenter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Gender <span class="caret"></span>
                                   </button>
@@ -163,7 +163,7 @@
                         <div class="col-md-12 col-sm-12">
                                 <div class="service-item ">
                                 <!-- href="afterRegister.jsp#Vadidate" -->
-                                        <a href="afterRegister.jsp#Vadidate" target="_parent" id="registerBtn" class="btn btn-dark ">Completed register</a>
+                                        <a href="afterRegister.jsp#notification" target="_parent" id="registerBtn" class="btn btn-dark ">Completed register</a>
                                     
                                 </div>
                         </div>
